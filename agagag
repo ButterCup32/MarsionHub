@@ -1,0 +1,126 @@
+local Marsion = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local DropShadowHolder = Instance.new("Frame")
+local DropShadow = Instance.new("ImageLabel")
+local TopBar = Instance.new("Frame")
+local Line = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local UIPadding = Instance.new("UIPadding")
+local ExitBtn = Instance.new("ImageLabel")
+local TabHolder = Instance.new("Frame")
+local Navigator = Instance.new("Frame")
+local Button2 = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local Button = Instance.new("Frame")
+local ImageLabel_2 = Instance.new("ImageLabel")
+ 
+Marsion.Name = "Marsion"
+Marsion.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = Marsion
+Main.AnchorPoint = Vector2.new(0.5, 0.5)
+Main.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+Main.Position = UDim2.new(0.5, 0, 0.5, 0)
+Main.Size = UDim2.new(0, 546, 0, 466)
+
+DropShadowHolder.Name = "DropShadowHolder"
+DropShadowHolder.Parent = Main
+DropShadowHolder.BackgroundTransparency = 1
+DropShadowHolder.BorderSizePixel = 0
+DropShadowHolder.Size = UDim2.new(1, 0, 1, 0)
+DropShadowHolder.ZIndex = 0
+
+DropShadow.Name = "DropShadow"
+DropShadow.Parent = DropShadowHolder
+DropShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+DropShadow.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+DropShadow.BackgroundTransparency = 1
+DropShadow.BorderSizePixel = 0
+DropShadow.Position = UDim2.new(0.5, 0, 0.5, 0)
+DropShadow.Size = UDim2.new(1, 47, 1, 47)
+DropShadow.ZIndex = 0
+DropShadow.Image = "rbxassetid://6014261993"
+DropShadow.ImageColor3 = Color3.new(0, 0, 0)
+DropShadow.ImageTransparency = 0.5
+DropShadow.ScaleType = Enum.ScaleType.Slice
+DropShadow.SliceCenter = Rect.new(49, 49, 450, 450)
+
+TopBar.Name = "TopBar"
+TopBar.Parent = Main
+TopBar.BackgroundColor3 = Color3.new(0.133333, 0.133333, 0.133333)
+TopBar.BorderColor3 = Color3.new(0.133333, 0.133333, 0.133333)
+TopBar.Size = UDim2.new(1, 0, 0, 37)
+
+Line.Name = "Line"
+Line.Parent = TopBar
+Line.AnchorPoint = Vector2.new(0, 1)
+Line.BackgroundColor3 = Color3.new(1, 0.411765, 0.0196078)
+Line.BorderColor3 = Color3.new(0.133333, 0.133333, 0.133333)
+Line.BorderSizePixel = 0
+Line.Position = UDim2.new(0, 0, 1, 0)
+Line.Size = UDim2.new(1, 0, 0, 1)
+
+Title.Name = "Title"
+Title.Parent = TopBar
+Title.BackgroundColor3 = Color3.new(1, 1, 1)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(0.516055048, 0, 1, 0)
+Title.Font = Enum.Font.Ubuntu
+Title.Text = "Marsion"
+Title.TextColor3 = Color3.new(1, 1, 1)
+Title.TextSize = 30
+Title.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding.Parent = Title
+UIPadding.PaddingLeft = UDim.new(0, 8)
+UIPadding.PaddingTop = UDim.new(0, 2)
+
+ExitBtn.Name = "ExitBtn"
+ExitBtn.Parent = TopBar
+ExitBtn.AnchorPoint = Vector2.new(1, 0)
+ExitBtn.BackgroundColor3 = Color3.new(1, 1, 1)
+ExitBtn.BackgroundTransparency = 1
+ExitBtn.Position = UDim2.new(1, -5, 0, 7)
+ExitBtn.Size = UDim2.new(0, 20, 0, 20)
+ExitBtn.Image = "rbxassetid://7743878857"
+ExitBtn.ImageColor3 = Color3.new(0.580392, 0.580392, 0.580392)
+
+TabHolder.Name = "TabHolder"
+TabHolder.Parent = Main
+TabHolder.BackgroundColor3 = Color3.new(0.211765, 0.211765, 0.211765)
+TabHolder.BackgroundTransparency = 1
+TabHolder.Position = UDim2.new(0, 6, 0, 43)
+TabHolder.Size = UDim2.new(1, -12, 1, -49)
+
+Navigator.Name = "Navigator"
+Navigator.Parent = TabHolder
+Navigator.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+Navigator.Position = UDim2.new(0, 9, 0, 3)
+Navigator.Size = UDim2.new(1, -16, 0, 35)
+
+Button2.Name = "Button2"
+Button2.Parent = Navigator
+Button2.BackgroundColor3 = Color3.new(0.356863, 0.356863, 0.356863)
+Button2.Position = UDim2.new(0, 49, 0, 4)
+Button2.Size = UDim2.new(0, 28, 0, 28)
+
+ImageLabel.Parent = Button2
+ImageLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageLabel.BackgroundTransparency = 1
+ImageLabel.Size = UDim2.new(0, 28, 0, 28)
+ImageLabel.Image = "rbxassetid://7733960981"
+ImageLabel.ImageColor3 = Color3.new(0, 0, 0)
+
+Button.Name = "Button"
+Button.Parent = Navigator
+Button.BackgroundColor3 = Color3.new(0.356863, 0.356863, 0.356863)
+Button.Position = UDim2.new(0, 8, 0, 4)
+Button.Size = UDim2.new(0, 28, 0, 28)
+
+ImageLabel_2.Parent = Button
+ImageLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageLabel_2.BackgroundTransparency = 1
+ImageLabel_2.Size = UDim2.new(0, 28, 0, 28)
+ImageLabel_2.Image = "rbxassetid://7733663582"
+ImageLabel_2.ImageColor3 = Color3.new(0, 0, 0) 
